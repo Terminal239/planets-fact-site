@@ -2,6 +2,9 @@
 
 :root {
   --primary-purple: #6d2ed5;
+  --text: #eaebf3;
+  --grey: #828396;
+  --item-border: #373753;
 
   --font-h1: 1.75rem;
   --font-content: 0.6875rem;
@@ -20,6 +23,7 @@
 
 body {
   font-family: "League Spartan", sans-serif;
+  font-size: 0.9375rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 
@@ -56,6 +60,14 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+  color: inherit;
+  text-align: center;
+  line-height: 1;
+}
+
+ul,
+ol {
+  list-style-type: none;
 }
 
 p,
@@ -69,6 +81,16 @@ h6 {
 }
 
 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+h1,
 h2 {
   font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
 }

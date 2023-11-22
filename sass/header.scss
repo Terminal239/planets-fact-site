@@ -1,0 +1,44 @@
+header {
+  padding-inline: 24px;
+  max-height: 160px;
+
+  @media screen and (min-width: 650px) {
+    flex-direction: column;
+    padding: 1.5rem 4rem;
+    gap: 2.5rem;
+
+    border-bottom: 1px solid var(--item-border);
+  }
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+  }
+}
+
+nav {
+  align-self: stretch;
+  height: min-content;
+  line-height: 1;
+
+  @media screen and (min-width: 650px) {
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      text-transform: uppercase;
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 0.875rem;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    align-self: center;
+    ul {
+      gap: 2rem;
+    }
+  }
+}
