@@ -2,9 +2,19 @@
 
 :root {
   --primary-purple: #6d2ed5;
+  --primary-dark-blue: #080821;
   --text: #eaebf3;
   --grey: #828396;
   --item-border: #373753;
+
+  --mercury: #419db9;
+  --venus: #a34d28;
+  --earth: #6f2ed6;
+  --mars: #d14e33;
+  --jupiter: #d93b36;
+  --saturn: #cb5020;
+  --uranus: #1ec2a1;
+  --neptune: #2d68f0;
 
   --font-h1: 1.75rem;
   --font-content: 0.6875rem;
@@ -29,6 +39,7 @@ body {
 
   background-color: #070625;
   color: #fff;
+  overflow-x: hidden;
 }
 
 img {

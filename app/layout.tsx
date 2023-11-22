@@ -2,6 +2,7 @@ import BackgroundSVG from "../public/background-stars.svg";
 import type { Metadata } from "next";
 import Image from "next/image";
 import "../sass/index.scss";
+import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
   title: "Planets Fact Site",
@@ -14,23 +15,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <header>
+        <header className="between">
           <h1>The Planets</h1>
-          {/* {width! > 768 && (
-            <nav>
-              <ul>
-                <li>Mercury</li>
-                <li>Venus</li>
-                <li>Earth</li>
-                <li>Mars</li>
-                <li>Jupiter</li>
-                <li>Saturn</li>
-                <li>Uranus</li>
-                <li>Neptune</li>
-              </ul>
-            </nav>
-          )} */}
-          <Image src={"/icon-hamburger.svg"} alt="menu icon" height={24} width={24} />
+          <Navigation />
         </header>
         {children}
         <Image className="global-background" src={BackgroundSVG} alt="background of start" width={0} height={0} sizes="100vw" style={{ height: "100%", objectFit: "cover" }} />

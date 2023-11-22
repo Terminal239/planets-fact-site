@@ -8,9 +8,9 @@ const Planet = () => {
   return (
     <main>
       <MaxWidthWrapper>
-        <section>
-          <div>
-            <Image src={"/planet-earth.svg"} alt="earth" width={100} height={100} />
+        <section className="information">
+          <div className="planet-image">
+            <Image src={"/planet-earth.svg"} alt="earth" width={0} height={0} style={{ width: "70%", height: "100%" }} />
           </div>
           <Content />
           <ContentTab />

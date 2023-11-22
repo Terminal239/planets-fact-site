@@ -46,6 +46,8 @@
   }
 
   li.selected {
+    color: #fff;
+
     &::after {
       content: "";
       position: absolute;
@@ -225,7 +227,7 @@
     font-family: "Antonio", sans-serif;
     font-size: 1.5rem;
 
-    @media screen and (min-width: 100px) {
+    @media screen and (min-width: 1000px) {
       font-size: 2rem;
     }
   }
