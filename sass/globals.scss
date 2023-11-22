@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=League+Spartan:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-purple: #6d2ed5;
+
+  --font-h1: 1.75rem;
+  --font-content: 0.6875rem;
+  --font-link: 0.75rem;
+  --stat-title: 0.5rem;
+  --stat-number: 1.25rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  background-color: #070625;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2 {
+  font-family: "Antonio", sans-serif;
+}
