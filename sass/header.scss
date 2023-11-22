@@ -6,13 +6,12 @@ header {
   img {
     max-height: 30px;
   }
+  border-bottom: 1px solid var(--item-border);
 
   @media screen and (min-width: 650px) {
     flex-direction: column;
     padding: 1.5rem 4rem;
     gap: 2.5rem;
-
-    border-bottom: 1px solid var(--item-border);
   }
 
   @media screen and (min-width: 1000px) {
