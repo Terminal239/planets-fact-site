@@ -2,11 +2,11 @@ header {
   padding-inline: 24px;
   padding-block: 2rem;
   max-height: 160px;
+  border-bottom: 1px solid var(--item-border);
 
   img {
     max-height: 30px;
   }
-  border-bottom: 1px solid var(--item-border);
 
   @media screen and (min-width: 650px) {
     flex-direction: column;

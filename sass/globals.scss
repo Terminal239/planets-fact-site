@@ -52,6 +52,13 @@ img {
   shape-margin: 1rem;
 }
 
+a {
+  &:is(:link, :visited) {
+    color: currentColor;
+    text-decoration: none;
+  }
+}
+
 picture,
 video,
 canvas,

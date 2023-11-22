@@ -1,21 +1,28 @@
-const Statistics = () => {
+interface Props {
+  rotation: string;
+  revolution: string;
+  radius: string;
+  temperature: string;
+}
+
+const Statistics = ({ rotation, revolution, radius, temperature }: Props) => {
   return (
     <section className="statistics">
       <div className="item between">
         <h3>Rotation Time</h3>
-        <p>0.99 days</p>
+        <p>{rotation}</p>
       </div>
       <div className="item between">
         <h3>Revolution Time</h3>
-        <p>365.26 days</p>
+        <p>{revolution}</p>
       </div>
       <div className="item between">
         <h3>Radius</h3>
-        <p>6,371 km</p>
+        <p>{radius}</p>
       </div>
       <div className="item between">
         <h3>Average temp.</h3>
-        <p>16&deg;C</p>
+        <p>{temperature}</p>
       </div>
     </section>
   );

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import "../sass/index.scss";
 import Navigation from "@/components/Navigation";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Planets Fact Site",
@@ -16,7 +17,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <header className="between">
-          <h1>The Planets</h1>
+          <h1>
+            <Link href={"/"}>The Planets</Link>
+          </h1>
           <Navigation />
         </header>
         {children}

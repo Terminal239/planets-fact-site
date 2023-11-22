@@ -1,5 +1,6 @@
 const planets: Planet[] = [
   {
+    slug: "mercury",
     name: "Mercury",
     overview: {
       content:
@@ -27,6 +28,7 @@ const planets: Planet[] = [
     },
   },
   {
+    slug: "venus",
     name: "Venus",
     overview: {
       content:
@@ -54,6 +56,7 @@ const planets: Planet[] = [
     },
   },
   {
+    slug: "earth",
     name: "Earth",
     overview: {
       content:
@@ -81,6 +84,7 @@ const planets: Planet[] = [
     },
   },
   {
+    slug: "mars",
     name: "Mars",
     overview: {
       content:
@@ -108,6 +112,7 @@ const planets: Planet[] = [
     },
   },
   {
+    slug: "jupiter",
     name: "Jupiter",
     overview: {
       content:
@@ -135,6 +140,7 @@ const planets: Planet[] = [
     },
   },
   {
+    slug: "saturn",
     name: "Saturn",
     overview: {
       content:
@@ -162,6 +168,7 @@ const planets: Planet[] = [
     },
   },
   {
+    slug: "uranus",
     name: "Uranus",
     overview: {
       content:
@@ -189,6 +196,7 @@ const planets: Planet[] = [
     },
   },
   {
+    slug: "neptune",
     name: "Neptune",
     overview: {
       content:

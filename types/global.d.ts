@@ -2,6 +2,7 @@ export {};
 
 declare global {
   interface Planet {
+    slug: string;
     name: string;
     overview: {
       content: string;

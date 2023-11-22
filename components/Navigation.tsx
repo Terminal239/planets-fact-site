@@ -1,6 +1,7 @@
 "use client";
 import { useWindowSize } from "@uidotdev/usehooks";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Navigation = () => {
@@ -12,28 +13,44 @@ const Navigation = () => {
       <nav className={`${width! < 650 ? "mobile-navigation" : ""} ${width! < 650 && showNavigation && "transform"}`}>
         <ul>
           <li className="mercury">
-            <span className="planet-color"></span>Mercury
+            <Link href={"/mercury"}>
+              <span className="planet-color"></span>Mercury
+            </Link>
           </li>
           <li className="venus">
-            <span className="planet-color"></span>Venus
+            <Link href={"/venus"}>
+              <span className="planet-color"></span>Venus
+            </Link>
           </li>
           <li className="earth">
-            <span className="planet-color"></span>Earth
+            <Link href={"/earth"}>
+              <span className="planet-color"></span>Earth
+            </Link>
           </li>
           <li className="mars">
-            <span className="planet-color"></span>Mars
+            <Link href={"/mars"}>
+              <span className="planet-color"></span>Mars
+            </Link>
           </li>
           <li className="jupiter">
-            <span className="planet-color"></span>Jupiter
+            <Link href={"/jupiter"}>
+              <span className="planet-color"></span>Jupiter
+            </Link>
           </li>
           <li className="saturn">
-            <span className="planet-color"></span>Saturn
+            <Link href={"/saturn"}>
+              <span className="planet-color"></span>Saturn
+            </Link>
           </li>
           <li className="uranus">
-            <span className="planet-color"></span>Uranus
+            <Link href={"/uranus"}>
+              <span className="planet-color"></span>Uranus
+            </Link>
           </li>
           <li className="neptune">
-            <span className="planet-color"></span>Neptune
+            <Link href={"/neptune"}>
+              <span className="planet-color"></span>Neptune
+            </Link>
           </li>
         </ul>
       </nav>
