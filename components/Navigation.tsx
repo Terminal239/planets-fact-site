@@ -1,57 +1,29 @@
 "use client";
+import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import { useWindowSize } from "@uidotdev/usehooks";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+
+const planets = ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "neptune"];
 
 const Navigation = () => {
   const { width } = useWindowSize();
   const [showNavigation, setShowNavigation] = useState<boolean>(false);
+  const selectedPlanet = usePathname().slice(1);
 
   return (
     <>
       <nav className={`${width! < 650 ? "mobile-navigation" : ""} ${width! < 650 && showNavigation && "transform"}`}>
         <ul>
-          <li className="mercury">
-            <Link href={"/mercury"}>
-              <span className="planet-color"></span>Mercury
-            </Link>
-          </li>
-          <li className="venus">
-            <Link href={"/venus"}>
-              <span className="planet-color"></span>Venus
-            </Link>
-          </li>
-          <li className="earth">
-            <Link href={"/earth"}>
-              <span className="planet-color"></span>Earth
-            </Link>
-          </li>
-          <li className="mars">
-            <Link href={"/mars"}>
-              <span className="planet-color"></span>Mars
-            </Link>
-          </li>
-          <li className="jupiter">
-            <Link href={"/jupiter"}>
-              <span className="planet-color"></span>Jupiter
-            </Link>
-          </li>
-          <li className="saturn">
-            <Link href={"/saturn"}>
-              <span className="planet-color"></span>Saturn
-            </Link>
-          </li>
-          <li className="uranus">
-            <Link href={"/uranus"}>
-              <span className="planet-color"></span>Uranus
-            </Link>
-          </li>
-          <li className="neptune">
-            <Link href={"/neptune"}>
-              <span className="planet-color"></span>Neptune
-            </Link>
-          </li>
+          {planets.map((planet) => (
+            <li key={planet} className={`${planet} ${planet === selectedPlanet ? "selected" : ""}`}>
+              <Link href={`/${planet} `}>
+                <span className="planet-color"></span>
+                {planet.replace(planet.at(0)!, planet.at(0)!.toUpperCase())}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
       {width! < 650 && (

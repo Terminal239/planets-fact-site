@@ -11,8 +11,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // const { width } = useWindowSize();
-
   return (
     <html lang="en">
       <body>

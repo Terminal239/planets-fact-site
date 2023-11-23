@@ -10,12 +10,18 @@ header {
 
   @media screen and (min-width: 650px) {
     flex-direction: column;
-    padding: 1.5rem 4rem;
+    padding-inline: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
     gap: 2.5rem;
   }
 
   @media screen and (min-width: 1000px) {
     flex-direction: row;
+
+    h1 {
+      padding-bottom: 1.25rem;
+    }
   }
 }
 
@@ -62,6 +68,7 @@ header nav {
       font-size: 0.875rem;
 
       padding-block: 0;
+      padding-bottom: 1rem;
       border-bottom: none;
     }
 
@@ -71,9 +78,13 @@ header nav {
   }
 
   @media screen and (min-width: 1000px) {
-    align-self: center;
+    align-self: flex-end;
     ul {
       gap: 2rem;
+    }
+
+    li {
+      padding-bottom: 1.25rem;
     }
   }
 }
@@ -139,4 +150,31 @@ button.toggle-nav.sticky {
 
 .neptune .planet-color {
   background-color: var(--neptune);
+}
+
+@media screen and (min-width: 650px) {
+  .mercury.selected {
+    border-bottom: 4px solid var(--mercury);
+  }
+  .venus.selected {
+    border-bottom: 4px solid var(--venus);
+  }
+  .earth.selected {
+    border-bottom: 4px solid var(--earth);
+  }
+  .mars.selected {
+    border-bottom: 4px solid var(--mars);
+  }
+  .jupiter.selected {
+    border-bottom: 4px solid var(--jupiter);
+  }
+  .saturn.selected {
+    border-bottom: 4px solid var(--saturn);
+  }
+  .uranus.selected {
+    border-bottom: 4px solid var(--uranus);
+  }
+  .neptune.selected {
+    border-bottom: 4px solid var(--neptune);
+  }
 }

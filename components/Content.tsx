@@ -1,6 +1,7 @@
 import Planet from "@/app/(planet)/[slug]/page";
 import data from "@/data";
 import Image from "next/image";
+import Typewriter from "./Typewriter";
 
 interface Props {
   name: string;
@@ -13,8 +14,8 @@ interface Props {
 const Content = ({ name, data }: Props) => {
   return (
     <div className="content">
-      <h2>{name}</h2>
-      <p className="text">{data.content}</p>
+      <Typewriter inputText={name} element="h2" speed={200} />
+      <Typewriter inputText={data.content} element="p" speed={10} />
       <p className="source">
         Source:
         <a className="source-link" href={data.source}>
