@@ -15,7 +15,7 @@ const Content = ({ name, data }: Props) => {
   return (
     <div className="content">
       <Typewriter inputText={name} element="h2" speed={200} />
-      <Typewriter inputText={data.content} element="p" speed={10} />
+      <Typewriter classes="text" inputText={data.content} element="p" speed={10} />
       <p className="source">
         Source:
         <a className="source-link" href={data.source}>

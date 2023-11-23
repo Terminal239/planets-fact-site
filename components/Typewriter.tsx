@@ -1,15 +1,19 @@
 "use client";
+import { useWindowSize } from "@uidotdev/usehooks";
 import React, { useState, useEffect } from "react";
 
 interface Props {
   inputText: string;
   element: "h1" | "h2" | "h3" | "h4" | "p" | "span";
   speed?: number;
+  classes?: string;
 }
 
-const Typewriter = ({ speed, element, inputText }: Props) => {
+const Typewriter = ({ classes, speed, element, inputText }: Props) => {
+  const { width } = useWindowSize();
   const [displayText, setDisplayText] = useState("");
   const [text, setText] = useState(inputText);
+  const [touched, setTouched] = useState(false);
   const [index, setIndex] = useState(0);
 
   if (inputText !== text) {
@@ -19,6 +23,13 @@ const Typewriter = ({ speed, element, inputText }: Props) => {
   }
 
   useEffect(() => {
+    if (width! < 650) return () => setDisplayText(text);
+    else if (!touched && width! >= 650) {
+      setDisplayText("");
+      setIndex(0);
+      setTouched(true);
+    }
+
     if (index < text.length) {
       const intervalId = setInterval(() => {
         setDisplayText((prevText) => prevText + text[index]);
@@ -27,21 +38,21 @@ const Typewriter = ({ speed, element, inputText }: Props) => {
 
       return () => clearInterval(intervalId);
     }
-  }, [index, text, speed]);
+  }, [width, index, text, speed]);
 
   switch (element) {
     case "h1":
-      return <h1>{displayText}</h1>;
+      return <h1 className={classes}>{displayText}</h1>;
     case "h2":
-      return <h2>{displayText}</h2>;
+      return <h2 className={classes}>{displayText}</h2>;
     case "h3":
-      return <h3>{displayText}</h3>;
+      return <h3 className={classes}>{displayText}</h3>;
     case "h4":
-      return <h4>{displayText}</h4>;
+      return <h4 className={classes}>{displayText}</h4>;
     case "span":
-      return <span>{displayText}</span>;
+      return <span className={classes}>{displayText}</span>;
     case "p":
-      return <p>{displayText}</p>;
+      return <p className={classes}>{displayText}</p>;
   }
 };
 

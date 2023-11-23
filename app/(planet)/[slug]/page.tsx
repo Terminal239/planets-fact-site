@@ -43,7 +43,7 @@ const Planet = ({ params }: Props) => {
       <MaxWidthWrapper>
         <section className="information">
           <div className="planet-image">
-            <Image src={image} alt={`illustration of ${planetInfo.slug}`} width={0} height={0} style={{ width: "70%", height: "100%" }} />
+            <Image priority={true} src={image} alt={`illustration of ${planetInfo.slug}`} width={0} height={0} style={{ width: "70%", height: "100%" }} />
             {contentTab === "geology" && (
               <Image
                 src={`/geology-${planetInfo.slug}.png`}
