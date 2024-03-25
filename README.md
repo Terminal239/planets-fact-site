@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Planets Fact Site 
 
-## Getting Started
+This project is my solution to the Planets Fact Site challenge on Frontend Mentor. 
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Screenshot:
+- Overview: 
+    - The challenge
+- Links
+- My process
+    - Built with
+    - What I learned
+    - Continued development
+    - Useful resources
+- Author
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshot
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![](./screenshots/homepage.png)
+![](./screenshots/planet-page.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Overview
 
-To learn more about Next.js, take a look at the following resources:
+### The challenge
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Users should be able to:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each planet page and toggle between "Overview", "Internal Structure", and "Surface Geology"
 
-## Deploy on Vercel
+## Links
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Solution URL](https://github.com/TerminalEagle/planets-fact-site)
+- [Live Site URL](https://planets-fact-site-website.netlify.app/mercury)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## My process
+
+### Built with
+
+* Semantic HTML5 markup
+* SASS/SCSS
+* Flexbox
+* CSS Grid
+* Mobile-first workflow
+* React: [https://reactjs.org/](https://reactjs.org/) - JS library
+* Next.js: [https://nextjs.org/](https://nextjs.org/) - React framework
+
+### What I learned
+
+This project challenged my layout skills, especially for a multipage website. I specifically gained valuable experience with:
+
+* **Dynamic Routing in Next.js:**  Implementing dynamic routes to create adaptable planet pages.
+
+### Continued development
+
+I want to explore more advanced applications of dynamic routing and further enhance my understanding of  Next.js data fetching methods.
+
+### Useful resources
+
+* **Dynamic Routes:** [https://nextjs.org/docs/routing/dynamic-routes](https://nextjs.org/docs/routing/dynamic-routes)
+* **Data fetching-overview:** [https://nextjs.org/docs/basic-features/data-fetching/overview](https://nextjs.org/docs/basic-features/data-fetching/overview)
+* **Get server-side-props:**  [https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props)
+
+
+## Author
+
+- Frontend Mentor - [@TerminalEagle](https://www.frontendmentor.io/profile/TerminalEagle) 
