@@ -34,7 +34,7 @@ Users should be able to:
 ## Links
 
 - [Solution URL](https://github.com/TerminalEagle/planets-fact-site)
-- [Live Site URL](https://planets-fact-site-website.netlify.app/mercury)
+- [Live Site URL](https://planets-fact-site-website.netlify.app/)
 
 ## My process
 
